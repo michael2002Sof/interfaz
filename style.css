@@ -1,0 +1,164 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  
+.header{
+    height: 100px;
+    background: rgb(68, 153, 233);
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.Menu a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4 ;
+}
+.Mostrar_menu,
+.Esconder_menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.Mostrar_menu {
+    order: 1;
+}
+.Menu a:hover,
+.Mostrar_menu :hover,
+.Esconder_menu:hover { color: rgb(0, 68, 255); }
+#Check { display: none; }
+/*REsponsive*/
+@media ( max-width: 768px){
+    .Mostrar_menu,
+    .Esconder_menu { display: block; }
+    .icon { height: 50px;
+            width: 60px; }
+    .Menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(68, 153, 233);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+.Menu a {
+    font-size: 25px;
+    display: block;
+    padding: 35px;
+
+}
+.Esconder_menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+#Check:checked ~ .Menu {
+    right: 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.colum {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+  
+.panel   { position: absolute; 
+           border-radius: 20px;  
+           background: #0080AA; 
+           position: absolute;
+           height: 28%;
+           width: 20%;
+           font-size: 20px;
+           font-family: jaldi,bold;
+           display: flex;  justify-content: center;  align-items: center;}
+.panel:hover {background: #015c7a;
+              transition: 0.5s;}
+.panel1  { top: 27%; left: 15%;}
+.panel2  { top: 27%; left: 38%;}
+.panel3  { top: 27%; left: 60%;}
+.panel4  { top: 65%; left: 27%;}
+.panel5  { top: 65%; left: 50%;}
+.iconos {
+      height: 250px;
+      width: 100px;
+}
+.txt{
+    color: white;
+text-align: center; position: absolute;
+top: 80%;}
+
+
+@media (max-width:768px) {
+
+  .panel1 { top: 20%;
+            left: 15%; }
+  .panel2 { top: 45%;
+            left: 15%; }
+  .panel3 { left: 55%;
+            top: 20%; }
+  .panel4 { left: 55%;
+            top: 45%; }
+  .panel5 { left: 35%;
+            top: 69%; }
+  .panel  { height: 20%;
+            width: 30%;
+            font-size: 14px; }
+  .iconos { height: 150px;
+            width: 50px; }
+            .txt{
+                top: 75%;
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-image: url('Imagenes/fd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
